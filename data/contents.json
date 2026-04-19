@@ -1,0 +1,940 @@
+{
+  "program": "B.Sc. (Honours) in Statistics",
+  "total_core_credits": 140.0,
+  "optional_credits": 4.0,
+  "semesters": [
+    {
+      "name": "First Year First Semester",
+      "total_credits": 14.0,
+      "courses": [
+        {
+          "code": "STA 1151",
+          "title": "Principles of Statistics",
+          "credits": 3.0,
+          "content_summary": [
+            "Introduces descriptive statistics: data classification, tabulation, frequency distributions, and graphical presentation (histograms, bar charts, ogives)",
+            "Covers measures of central tendency (mean, median, mode, quantiles) and dispersion (range, standard deviation, coefficient of variation)",
+            "Introduces moments, skewness, kurtosis, and shape characteristics of distributions",
+            "Covers association of attributes and simple bivariate analysis: correlation and regression via least squares"
+          ],
+          "main_texts": [
+            "Ross, S. M. (2010). Introductory Statistics (3rd ed.). Academic Press."
+          ]
+        },
+        {
+          "code": "STA 1152",
+          "title": "Principles of Statistics Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Hands-on computation of descriptive statistics: central tendency, dispersion, skewness, kurtosis using manual calculation",
+            "Practical exercises on data tabulation, frequency distribution construction, and graphical representation",
+            "Applied correlation and simple regression calculations with data interpretation"
+          ],
+          "main_texts": [
+            "Ross, S. M. (2010). Introductory Statistics (3rd ed.). Academic Press."
+          ]
+        },
+        {
+          "code": "MAT 1103",
+          "title": "Basic Algebra",
+          "credits": 3.0,
+          "content_summary": [
+            "Covers set theory, real number system, and complex numbers including De Moivre's theorem",
+            "Summation of trigonometric series and methods such as C+iS",
+            "Inequalities (Weierstrass, Cauchy, Chebyshev, Jensen) and polynomial theory including roots, transformations, and Descartes' rule"
+          ],
+          "main_texts": [
+            "Hall, H. S., & Knight, S. R. (2019). Higher Algebra. Arihant Publications India Limited."
+          ]
+        },
+        {
+          "code": "MAT 1104",
+          "title": "Calculus",
+          "credits": 3.0,
+          "content_summary": [
+            "Differential calculus: limits, continuity, higher derivatives, Leibnitz's theorem, Rolle's and Mean Value theorems, Taylor and Maclaurin series",
+            "Maxima/minima of single and multivariable functions, partial and total derivatives",
+            "Integral calculus: indefinite and definite integrals, Riemann integrals, double and triple integrals, with applications to areas and volumes"
+          ],
+          "main_texts": [
+            "Anton, H. (1995). Calculus with Analytic Geometry (5th ed.). John Wiley and Sons."
+          ]
+        },
+        {
+          "code": "ENG 1105",
+          "title": "English Language",
+          "credits": 2.0,
+          "content_summary": [
+            "Develops reading skills: strategies like critical reading, annotation, summary writing, and contextual vocabulary",
+            "Develops writing skills: grammar rules, tense, sentence construction, paragraph development, and use of connectors"
+          ],
+          "main_texts": [
+            "Soars, L., & Soars, J. (2014). New Headway Upper Intermediate Student's Book. Oxford University Press."
+          ]
+        },
+        {
+          "code": "STA 1150",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "First Year Second Semester",
+      "total_credits": 18.5,
+      "courses": [
+        {
+          "code": "STA 1251",
+          "title": "Introduction to Probability",
+          "credits": 3.0,
+          "content_summary": [
+            "Covers set theory basics, sample spaces, events, classical and axiomatic probability, conditional probability, and independence",
+            "Covers addition and multiplication laws, total probability theorem, Bayes' theorem",
+            "Introduces random variables (discrete and continuous), probability and distribution functions, joint/marginal/conditional distributions",
+            "Mathematical expectation, variance, covariance, MGF, characteristic functions, and Chebyshev/Markov inequalities"
+          ],
+          "main_texts": [
+            "Ross, S. M. (2018). A First Course in Probability (9th ed.). Academic Press.",
+            "Khan, M. S. H. (2022). Elements of Probability Theory & its Applications. The University Press Limited."
+          ]
+        },
+        {
+          "code": "STA 1253",
+          "title": "Sampling Techniques – I",
+          "credits": 3.0,
+          "content_summary": [
+            "Introduces sampling concepts: probability vs non-probability sampling, census vs survey, sampling and non-sampling errors",
+            "Covers Simple Random Sampling (SRS), Stratified, Systematic, and Cluster sampling with estimation of population mean, total, proportion and their standard errors",
+            "Ratio and regression methods of estimation; comparison of efficiency across designs",
+            "Brief coverage of non-probability methods: convenience, quota, snowball sampling"
+          ],
+          "main_texts": [
+            "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley.",
+            "Lohr, S. L. (2010). Sampling: Design and Analysis (2nd ed.). MPS Limited."
+          ]
+        },
+        {
+          "code": "STA 1254",
+          "title": "Sampling Techniques – I Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Practical drawing of samples using random numbers with and without replacement",
+            "Manual computation of unbiased estimators of population mean, total, proportion, and confidence intervals under SRS, stratified, systematic, and cluster sampling",
+            "Exercises on ratio and regression estimators, sample size determination, and efficiency comparison"
+          ],
+          "main_texts": [
+            "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley.",
+            "Lohr, S. L. (2010). Sampling: Design and Analysis (2nd ed.). MPS Limited."
+          ]
+        },
+        {
+          "code": "STA 1256",
+          "title": "Introduction to Computer and SPSS Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Basic computer operations, MS Word, Excel (statistical analysis, charts), and PowerPoint",
+            "SPSS: data entry, cleaning, management, graphical representation",
+            "Statistical analysis in SPSS: central tendency, dispersion, skewness, kurtosis, correlation, and simple regression"
+          ],
+          "main_texts": [
+            "Field, A. (2018). Discovering Statistics Using IBM SPSS Statistics (5th ed.). SAGE Publications.",
+            "George, D., & Mallery, P. (2016). IBM SPSS Statistics 23 Step by Step (14th ed.). Routledge."
+          ]
+        },
+        {
+          "code": "SPS 1205",
+          "title": "Introduction to Financial Mathematics",
+          "credits": 3.0,
+          "content_summary": [
+            "Interest rate measurement: simple, compound, nominal, effective rates, force of interest, present and future values",
+            "Valuation of annuities (immediate, due, perpetuity), loan repayment and amortization, bond valuation and yield rates",
+            "Investment return measures: duration, convexity, immunization, spot and forward rates",
+            "Risk management basics, Basel regulations, stock market structure, and introductory accounting principles"
+          ],
+          "main_texts": [
+            "Broverman, S. A. (2024). Mathematics of Investment and Credit (8th ed.). Actex Publications."
+          ]
+        },
+        {
+          "code": "MAT 1207",
+          "title": "Linear Algebra",
+          "credits": 3.0,
+          "content_summary": [
+            "Matrix operations, types of matrices, inverse, adjoint, Cramer's rule, row echelon forms, and rank",
+            "Systems of linear equations (homogeneous and non-homogeneous), g-inverse, quadratic forms",
+            "Vector spaces, linear dependence/independence, basis, dimension, linear transformations, kernel, rank",
+            "Eigenvalues, eigenvectors, Cayley-Hamilton theorem, orthogonalization (Gram-Schmidt), Kronecker products"
+          ],
+          "main_texts": [
+            "Hadley, G. (1961). Linear Algebra. Addison-Wesley.",
+            "Searle, S. R. Matrix Algebra Useful for Statistics. John Wiley."
+          ]
+        },
+        {
+          "code": "ENG 1209",
+          "title": "Academic Writing",
+          "credits": 2.0,
+          "content_summary": [
+            "Covers academic writing style: formality, objectivity, coherence, hedging, and paragraph structure",
+            "Essay types (argumentative, persuasive, expository), essay development, and formal letter writing",
+            "Report writing, in-text citation, and referencing formats (APA, Harvard, Vancouver)"
+          ],
+          "main_texts": [
+            "Oshima, A., & Hogue, A. (2007). Introduction to Academic Writing (3rd ed.). Longman.",
+            "Zemach, D. E., & Rumisek, L. A. (2003). Academic Writing: From Paragraph to Essay. Macmillan."
+          ]
+        },
+        {
+          "code": "STA 1250",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Second Year First Semester",
+      "total_credits": 16.5,
+      "courses": [
+        {
+          "code": "STA 2151",
+          "title": "Probability Distributions",
+          "credits": 3.0,
+          "content_summary": [
+            "Review of probability functions, MGF, CGF, characteristic and probability generating functions",
+            "Detailed study of discrete distributions: Bernoulli, Binomial, Poisson, Geometric, Hypergeometric, Negative Binomial, Multinomial; brief coverage of Logarithmic, Beta Binomial, Power Series",
+            "Detailed study of continuous distributions: Uniform, Exponential, Weibull, Gamma, Beta, Normal, Log-Normal, Cauchy; brief coverage of Logistic, Pareto, Laplace, Gumbel etc.",
+            "Truncated and censored distributions; elementary bivariate distributions (Binomial, Poisson, Normal, Gamma, Beta)"
+          ],
+          "main_texts": [
+            "Krishnamoorthy, K. (2006). Handbook of Statistical Distributions with Applications. Chapman and Hall/CRC.",
+            "Johnson, N., Kotz, S., & Kemp, A. (2008). Univariate Discrete Distributions (3rd ed.). John Wiley and Sons.",
+            "Johnson, N., & Balakrishnan, N. (1995). Continuous Univariate Distributions (2nd ed.). John Wiley and Sons."
+          ]
+        },
+        {
+          "code": "STA 2153",
+          "title": "Theory of Statistics",
+          "credits": 3.0,
+          "content_summary": [
+            "Sampling distributions from normal and non-normal populations; central limit theorem",
+            "Detailed study of chi-square, Student's t, and F distributions; distribution of correlation and regression coefficients",
+            "Hypothesis testing: errors, critical regions, tests for mean, variance, proportion, correlation; Bartlett's test, chi-square tests for contingency tables",
+            "Order statistics: properties, joint/marginal distributions, distribution of median and range"
+          ],
+          "main_texts": [
+            "Mood, A., Graybill, F., & Boes, D. (1974). Introduction to the Theory of Statistics (3rd ed.). McGraw-Hill.",
+            "Hogg, R. V., McKean, J., & Craig, A. T. (2012). Introduction to Mathematical Statistics (7th ed.). Pearson."
+          ]
+        },
+        {
+          "code": "STA 2154",
+          "title": "Theory of Statistics Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Practical hypothesis testing for one-sample and two-sample cases: mean, variance, proportion, correlation",
+            "Bartlett's homogeneity test, chi-square tests for 2x2 and r×c contingency tables",
+            "Sampling from normal and non-normal populations; interpretation of test results"
+          ],
+          "main_texts": [
+            "Mood, A., Graybill, F., & Boes, D. (1974). Introduction to the Theory of Statistics (3rd ed.). McGraw-Hill.",
+            "Hogg, R. V., McKean, J., & Craig, A. T. (2012). Introduction to Mathematical Statistics (7th ed.). Pearson."
+          ]
+        },
+        {
+          "code": "STA 2156",
+          "title": "Statistical Computing: C++ & STATA Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "C++ basics: variables, data types, control structures, functions, arrays, pointers, dynamic memory, classes, inheritance, and polymorphism",
+            "STATA: data entry, cleaning, management, graphical representation of data",
+            "Statistical analysis in STATA: descriptive statistics, correlation, hypothesis testing, and linear regression with diagnostics"
+          ],
+          "main_texts": [
+            "Lippman, S., Lajoie, L., & Moo, B. (2013). C++ Primer (5th ed.). Addison-Wesley.",
+            "Stroustrup, B. (2013). The C++ Programming Language (4th ed.). Addison-Wesley.",
+            "Hamilton, L. C. (2012). Statistics with Stata (12th ed.). Cengage Learning."
+          ]
+        },
+        {
+          "code": "MAT 2105",
+          "title": "Advanced Calculus & Differential Equations",
+          "credits": 3.0,
+          "content_summary": [
+            "Improper integrals, Gamma and Beta functions, multivariable functions, Taylor expansion, maxima/minima with Lagrange multipliers",
+            "Multiple integrals, Jacobians, Dirichlet integrals, Laplace and inverse Laplace transforms, Fourier series",
+            "Ordinary differential equations: first and higher order, homogeneous and non-homogeneous, linear and non-linear, systems of ODEs"
+          ],
+          "main_texts": [
+            "Anton, H., Bivens, I., & Davis, S. (2012). Calculus Early Transcendentals (10th ed.). John Wiley & Sons."
+          ]
+        },
+        {
+          "code": "ECO 2107",
+          "title": "Principles of Microeconomics",
+          "credits": 3.0,
+          "content_summary": [
+            "Basic economic concepts: scarcity, opportunity cost, PPF, demand and supply laws, elasticity, market equilibrium",
+            "Consumer behavior: utility theory, indifference curves, budget constraints, income and substitution effects",
+            "Production and cost theory: production functions, returns to scale, short-run and long-run costs",
+            "Market structures: perfect competition, monopoly, oligopoly, monopolistic competition, pricing decisions"
+          ],
+          "main_texts": [
+            "Mankiw, N. G. (2022). Principles of Microeconomics (9th ed.). Cengage Learning.",
+            "Case, K. E., Fair, R. C., & Oster, S. E. (2019). Principles of Economics (13th ed.). Pearson."
+          ]
+        },
+        {
+          "code": "STA 2150",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Second Year Second Semester",
+      "total_credits": 19.5,
+      "courses": [
+        {
+          "code": "STA 2251",
+          "title": "Regression Analysis – I",
+          "credits": 3.0,
+          "content_summary": [
+            "Correlation analysis: Pearson, rank, biserial, polychoric, intra-class correlations; spurious and non-sense correlation",
+            "Simple linear regression: OLS estimation, Gauss-Markov theorem, hypothesis testing, error variance estimation",
+            "Multiple linear regression: three-variable model, separation of effects, multiple and partial correlation, polynomial regression",
+            "Residual analysis: graphical methods, lack-of-fit tests, model adequacy checking"
+          ],
+          "main_texts": [
+            "Montgomery, D. C., Peck, E. A., & Vining, G. G. (2012). Introduction to Linear Regression Analysis (5th ed.). John Wiley.",
+            "Gujarati, D. N. (2009). Basic Econometrics. Tata McGraw-Hill Education.",
+            "Draper, N. R., & Smith, H. (1998). Applied Regression Analysis (3rd ed.). John Wiley."
+          ]
+        },
+        {
+          "code": "STA 2252",
+          "title": "Regression Analysis – I Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Software-based computation of correlation coefficients (Pearson, rank, biserial, polychoric, intra-class)",
+            "Fitting simple and multiple linear regression models using OLS; testing parameters and checking model adequacy",
+            "Residual analysis and model diagnostics using statistical software"
+          ],
+          "main_texts": [
+            "Montgomery, D. C., Peck, E. A., & Vining, G. G. (2012). Introduction to Linear Regression Analysis (5th ed.). John Wiley.",
+            "Gujarati, D. N. (2009). Basic Econometrics. Tata McGraw-Hill Education.",
+            "Draper, N. R., & Smith, H. (1998). Applied Regression Analysis (3rd ed.). John Wiley."
+          ]
+        },
+        {
+          "code": "MAT 2203",
+          "title": "Numerical Methods",
+          "credits": 3.0,
+          "content_summary": [
+            "Interpolation and extrapolation: Newton's forward/backward, Lagrange's, divided difference, and central difference (Stirling, Bessel) formulas",
+            "Root finding methods: Bisection, Newton-Raphson, Iteration; inverse interpolation",
+            "Numerical differentiation and integration: Trapezoidal rule, Simpson's 1/3 and 3/8 rules, Weddle's rule",
+            "Solving simultaneous linear equations by iterative methods and successive elimination"
+          ],
+          "main_texts": [
+            "Scarborough, J. B. (2017). Numerical Mathematical Analysis (6th ed.). Oxford & IBH."
+          ]
+        },
+        {
+          "code": "MAT 2205",
+          "title": "Real Analysis",
+          "credits": 3.0,
+          "content_summary": [
+            "Real number system: completeness, supremum/infimum, countable and bounded sets",
+            "Sequences: convergence, monotone sequences, Bolzano-Weierstrass theorem, Cauchy sequences",
+            "Infinite series: convergence tests, absolute and conditional convergence, power series",
+            "Limits, continuity, differentiability (Rolle's, MVT, Taylor's theorem), and Riemann integrals"
+          ],
+          "main_texts": [
+            "Bartle, R. G., & Sherbert, D. R. (2011). Introduction to Real Analysis (4th ed.). John Wiley & Sons.",
+            "Rudin, W. (1976). Principles of Mathematical Analysis (3rd ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "ECO 2207",
+          "title": "Principles of Macroeconomics",
+          "credits": 3.0,
+          "content_summary": [
+            "Macroeconomic indicators: GDP, GNI, national income measurement methods, real vs nominal GDP, business cycles",
+            "Aggregate demand and supply, Keynesian vs Classical views, equilibrium output and multiplier effects",
+            "Inflation, unemployment, Phillips curve, money supply and demand, commercial banking and money creation",
+            "Monetary policy (central banking) and fiscal policy (taxation, government expenditure, budget)"
+          ],
+          "main_texts": [
+            "Mankiw, N. G. (2022). Principles of Economics (11th ed.). Cengage Learning.",
+            "Case, K. E., Fair, R. C., & Oster, S. E. (2019). Principles of Economics (13th ed.). Pearson."
+          ]
+        },
+        {
+          "code": "CSE 2209",
+          "title": "Database Management & Programming",
+          "credits": 2.0,
+          "content_summary": [
+            "Database concepts: DBMS, RDBMS, entity-relationship model, relational model, SQL basics",
+            "Database design: indexing, sorting, integrity constraints, transactions, database security and concurrency",
+            "Database programming: variables, arrays, functions, procedures, and basic program logic for data operations"
+          ],
+          "main_texts": [
+            "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2010). Database System Concepts (6th ed.). McGraw-Hill.",
+            "Elmasri, R., & Navathe, S. B. (2009). Fundamentals of Database Systems (5th ed.). Pearson Education."
+          ]
+        },
+        {
+          "code": "CSE 2211",
+          "title": "Database Management & Programming Lab",
+          "credits": 3.0,
+          "content_summary": [
+            "Practical: creating, modifying, indexing, and sorting databases using software",
+            "Designing customer screens, reports, and menus; writing basic database programs",
+            "Hands-on SQL queries and database management tasks"
+          ],
+          "main_texts": [
+            "Silberschatz, A., Korth, H. F., & Sudarshan, S. (2010). Database System Concepts (6th ed.). McGraw-Hill.",
+            "Elmasri, R., & Navathe, S. B. (2009). Fundamentals of Database Systems (5th ed.). Pearson Education."
+          ]
+        },
+        {
+          "code": "STA 2250",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Third Year First Semester",
+      "total_credits": 17.5,
+      "courses": [
+        {
+          "code": "STA 3151",
+          "title": "Design & Analysis of Experiments – I",
+          "credits": 3.0,
+          "content_summary": [
+            "ANOVA: one-way, two-way, three-way classification with fixed, random, and mixed effect models; model adequacy checking",
+            "Multiple comparison tests: Tukey, Newman-Keuls, Duncan, Dunnett, Bonferroni",
+            "Standard experimental designs: CRD, RBD, Latin Square, Graeco-Latin Square, replicated Latin Square; estimation, analysis, and relative efficiency",
+            "Introduction to factorial experiments: two and three level designs up to n factors"
+          ],
+          "main_texts": [
+            "Montgomery, D. C. (2020). Design and Analysis of Experiments (10th ed.). Wiley.",
+            "Das, M. N., & Giri, N. C. (2017). Design and Analysis of Experiments (3rd ed.). New Age International.",
+            "Sahai, H., & Ageel, M. I. (2000). The Analysis of Variance: Fixed, Random and Mixed Models. Birkhauser."
+          ]
+        },
+        {
+          "code": "STA 3152",
+          "title": "Design & Analysis of Experiments – I Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Practical ANOVA for one-way and two-way classified data with fixed, random, and mixed models",
+            "Analysis of CRD, RBD, and Latin Square designs; handling missing data",
+            "Multiple comparison tests and factorial experiment analysis (two and three levels) using software"
+          ],
+          "main_texts": [
+            "Montgomery, D. C. (2020). Design and Analysis of Experiments (10th ed.). Wiley.",
+            "Das, M. N., & Giri, N. C. (2017). Design and Analysis of Experiments (3rd ed.). New Age International."
+          ]
+        },
+        {
+          "code": "STA 3153",
+          "title": "Statistical Inference",
+          "credits": 3.0,
+          "content_summary": [
+            "Point estimation: unbiasedness, sufficiency, consistency, efficiency, Cramer-Rao lower bound, MVB; methods of MLE, moments, least squares, Bayes",
+            "Interval estimation: confidence intervals for normal, binomial, Poisson parameters; large sample intervals",
+            "Parametric tests: Neyman-Pearson lemma, most powerful tests, UMP tests, critical regions",
+            "Non-parametric tests: runs test, goodness-of-fit, sign test, Wilcoxon signed rank, rank-based two-sample and k-sample tests, measures of association"
+          ],
+          "main_texts": [
+            "Mukhopadhyay, N. (2000). Probability and Statistical Inference. CRC Press.",
+            "Rohatgi, V. K. (2013). Statistical Inference. Dover Publications.",
+            "Mood, A., Graybill, F., & Boes, D. (1974). Introduction to the Theory of Statistics (3rd ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 3154",
+          "title": "Statistical Inference Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Drawing samples from univariate and bivariate normal distributions; applying MLE and method of moments",
+            "Constructing confidence intervals for normal, binomial, and Poisson parameters",
+            "Hypothesis testing for univariate/bivariate normal and discrete distributions; power curves; non-parametric tests"
+          ],
+          "main_texts": [
+            "Hogg, R. V., & Craig, A. T. Introduction to Mathematical Statistics. Macmillan.",
+            "Mood, A., Graybill, F., & Boes, D. (1974). Introduction to the Theory of Statistics (3rd ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 3155",
+          "title": "Statistical Simulation & Data Analysis (R & Python)",
+          "credits": 2.0,
+          "content_summary": [
+            "Simulation concepts: discrete and continuous simulation, random number and random variate generation",
+            "Monte Carlo integration; functions including incomplete gamma/beta, chi-square, t, F, binomial, hypergeometric distributions",
+            "R and Python: basic operations, data management, loops, functions, summary statistics, graphical procedures, and statistical models with probability distributions"
+          ],
+          "main_texts": [
+            "Ross, S. M. (2006). Simulation (4th ed.). Academic Press.",
+            "Cohen, Y., & Cohen, J. Y. (2008). Statistics and Data with R: An Applied Approach Through Examples. John Wiley & Sons.",
+            "VanderPlas, J. (2016). Python Data Science Handbook: Essential Tools for Working with Data. O'Reilly."
+          ]
+        },
+        {
+          "code": "STA 3156",
+          "title": "Statistical Simulation & Data Analysis Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Practical R and Python: basic operations, data management, data frames, grouping, and graphical representation",
+            "Data analysis using R/Python: regression, ANOVA, all-possible regressions, model diagnostics, RBD analysis, split-plot, non-orthogonal designs"
+          ],
+          "main_texts": [
+            "Ross, S. M. (2006). Simulation (4th ed.). Academic Press.",
+            "Cohen, Y., & Cohen, J. Y. (2008). Statistics and Data with R: An Applied Approach Through Examples. John Wiley & Sons.",
+            "VanderPlas, J. (2016). Python Data Science Handbook. O'Reilly."
+          ]
+        },
+        {
+          "code": "STA 3157",
+          "title": "Linear Programming",
+          "credits": 3.0,
+          "content_summary": [
+            "LP formulation, graphical method, simplex method, revised simplex, primal-dual problems, sensitivity analysis",
+            "Integer programming: cutting plane and branch-and-bound algorithms",
+            "Transportation and assignment models; network models: minimal spanning tree, maximal flow, shortest route",
+            "Game theory: two-person zero-sum games and their LP equivalence"
+          ],
+          "main_texts": [
+            "Bazaraa, M. S., Jarvis, J. J., & Sherali, H. D. (2009). Linear Programming and Network Flows (4th ed.). Wiley.",
+            "Taha, H. A. (2010). Operations Research: An Introduction (9th ed.). Pearson."
+          ]
+        },
+        {
+          "code": "STA 3150",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Third Year Second Semester",
+      "total_credits": 16.0,
+      "courses": [
+        {
+          "code": "STA 3251",
+          "title": "Stochastic Processes",
+          "credits": 3.0,
+          "content_summary": [
+            "Modern probability: Borel fields, probability measure, conditional expectation in sigma-algebras",
+            "Characteristic and probability generating functions; convergence of random variables, laws of large numbers, CLT, Martingales",
+            "Markov chains: transition matrix, classification of states, ergodic properties, stability, gambler's ruin, random walk",
+            "Poisson process, birth-death processes, immigration, renewal theory; queuing models: M/M/1, M/M/1/N, M/M/m"
+          ],
+          "main_texts": [
+            "Ross, S. M. Stochastic Processes (2nd ed.). John Wiley & Sons.",
+            "Bhat, B. R. (2007). Modern Probability Theory. New Age International.",
+            "Medhi, J. (1994). Stochastic Processes. New Age International.",
+            "Sufian, A. J. M. (2017). Stochastic Processes and Their Applications in Business. The University Press Limited."
+          ]
+        },
+        {
+          "code": "STA 3253",
+          "title": "Demography",
+          "credits": 3.0,
+          "content_summary": [
+            "Sources of demographic data: census, surveys, vital registration; types of errors and detection methods",
+            "Fertility measures: CBR, GFR, ASFR, TFR, GRR, NRR, Bongaarts' model; mortality measures: CDR, ASDR, infant mortality",
+            "Nuptiality measures, life table construction and application, population pyramids, migration measures",
+            "Population growth models: exponential, Gompertz, and logistic curve fitting"
+          ],
+          "main_texts": [
+            "Islam, M. N. (2015). An Introduction to Demographic Techniques. Mullick & Brothers.",
+            "Kpedekpo, G. M. K. (1982). Essentials of Demographic Analysis for Africa. Heinemann."
+          ]
+        },
+        {
+          "code": "STA 3254",
+          "title": "Demography Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Practical computation of demographic rates and ratios (CBR, CDR, TFR, GRR, NRR, SR)",
+            "Construction of population pyramids, complete and abridged life tables",
+            "Fitting growth curves and estimating population growth rates from real data"
+          ],
+          "main_texts": [
+            "Islam, M. N. (2015). An Introduction to Demographic Techniques. Mullick & Brothers.",
+            "Kpedekpo, G. M. K. (1982). Essentials of Demographic Analysis for Africa. Heinemann."
+          ]
+        },
+        {
+          "code": "STA 3256",
+          "title": "Data Analysis with SAS Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "SAS fundamentals: program structure, syntax, accessing data sets and libraries",
+            "Data management: reading, cleaning, merging/concatenating datasets, handling missing data, formatting",
+            "Statistical analysis using SAS PROC steps: MEANS, FREQ, CORR, REG, ANOVA, GLM, T-TEST, UNIVARIATE, and SAS graphics"
+          ],
+          "main_texts": [
+            "Der, G., & Everitt, B. S. (2008). A Handbook of Statistical Analyses Using SAS (3rd ed.). CRC Press."
+          ]
+        },
+        {
+          "code": "STA 3257",
+          "title": "Regression Analysis – II",
+          "credits": 3.0,
+          "content_summary": [
+            "Generalized and weighted least squares; Gauss-Markov-Aitken theorem; estimation and tests for linear restrictions",
+            "Heteroscedasticity: detection, testing, and estimation under heteroscedastic disturbances",
+            "Multicollinearity: detection, effects, remedial measures, estimable functions, variable selection",
+            "Autocorrelation: sources, consequences, tests, and parameter estimation; dummy variables; errors-in-variables models"
+          ],
+          "main_texts": [
+            "Gujarati, D. N. (2009). Basic Econometrics (3rd ed.). McGraw-Hill.",
+            "Johnston, J. (1979). Econometric Methods. McGraw-Hill.",
+            "Neter, J., Wasserman, W., & Kutner, M. H. (1983). Applied Linear Regression Models. Richard D. Irwin."
+          ]
+        },
+        {
+          "code": "STA 3258",
+          "title": "Regression Analysis – II Lab",
+          "credits": 2.0,
+          "content_summary": [
+            "Fitting multiple regression models and testing parameters using software",
+            "Detection and correction of heteroscedasticity and multicollinearity; autocorrelation tests and remediation",
+            "Fitting dummy variable regression models and performing hypothesis tests"
+          ],
+          "main_texts": [
+            "Gujarati, D. N. (2009). Basic Econometrics (3rd ed.). McGraw-Hill.",
+            "Johnston, J. (1979). Econometric Methods. McGraw-Hill.",
+            "Neter, J., Wasserman, W., & Kutner, M. H. (1983). Applied Linear Regression Models. Richard D. Irwin."
+          ]
+        },
+        {
+          "code": "STA 3259",
+          "title": "Field Work",
+          "credits": 1.0,
+          "content_summary": [
+            "7-day field visit to an industry, organization, or institution for hands-on data collection experience",
+            "Students apply sampling techniques, collaborate in groups, and submit a written field report"
+          ],
+          "main_texts": []
+        },
+        {
+          "code": "STA 3250",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Fourth Year First Semester",
+      "total_credits": 19.0,
+      "courses": [
+        {
+          "code": "STA 4151",
+          "title": "Economic Statistics",
+          "credits": 3.0,
+          "content_summary": [
+            "Index numbers: price, quantity, value indices; cost of living index; tests of index numbers",
+            "Time series: components, decomposition, trend and seasonality estimation methods",
+            "Income distribution: Pareto's law, Lorenz curve, Gini coefficient, lognormal distribution, stochastic income models",
+            "Production theory: Cobb-Douglas and CES production functions, cost minimization, profit maximization, input-output analysis (Leontief model), dynamic growth models (Harrod-Domar, Cobweb)"
+          ],
+          "main_texts": [
+            "Allen, R. G. D. (1970). Mathematical Economics. Macmillan.",
+            "Chiang, A. C., & Wainwright, K. (2005). Fundamental Methods of Mathematical Economics (4th ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 4152",
+          "title": "Economic Statistics Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Computation of price/income elasticity of demand; fitting demand and Engel curves",
+            "Fitting Pareto and lognormal distributions; Lorenz curve and Gini ratio estimation",
+            "Estimation of Cobb-Douglas, CES, and trans-log production functions; input-output table construction; fitting growth curves"
+          ],
+          "main_texts": [
+            "Allen, R. G. D. (1970). Mathematical Economics. Macmillan.",
+            "Chiang, A. C., & Wainwright, K. (2005). Fundamental Methods of Mathematical Economics (4th ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 4153",
+          "title": "Applied Statistics",
+          "credits": 3.0,
+          "content_summary": [
+            "Statistical quality control: control charts for variables (mean, range, SD) and attributes (p-chart, d-chart, c-chart), modified control limits",
+            "Acceptance sampling: OC curves, ASN, ATI, AOQL; single, double, and sequential sampling plans (Dodge-Romig)",
+            "Educational/psychological statistics: scaling (Z-scores, T-scores, percentile), test reliability (test-retest, split-half, Kuder-Richardson), validity, and IQ",
+            "Published statistics in Bangladesh: sources, classifications, and limitations of official statistical publications"
+          ],
+          "main_texts": [
+            "Grant, E. L., & Leavenworth, R. S. (2004). Statistical Quality Control (7th ed.). Tata McGraw-Hill.",
+            "Guilford, J. P., & Fruchter, B. (1977). Fundamental Statistics in Psychology and Education (6th ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 4154",
+          "title": "Applied Statistics Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Drawing control charts (mean, range, SD, p, d, c) and computing modified control limits using industrial data",
+            "Constructing OC, ASN, ATI, AOQ curves for single, double, and sequential sampling plans",
+            "Computing test item difficulty, Z/T/percentile scores, scaling of rankings/ratings, and reliability coefficients for educational data"
+          ],
+          "main_texts": [
+            "Grant, E. L., & Leavenworth, R. S. (2004). Statistical Quality Control (7th ed.). Tata McGraw-Hill.",
+            "Guilford, J. P., & Fruchter, B. (1977). Fundamental Statistics in Psychology and Education (6th ed.). McGraw-Hill."
+          ]
+        },
+        {
+          "code": "STA 4155",
+          "title": "Design & Analysis of Experiments – II",
+          "credits": 3.0,
+          "content_summary": [
+            "Linear estimation, estimable functions, optimality of least squares, tests of hypothesis for non-full-rank models",
+            "Incomplete block designs: BIB design construction and analysis (intra- and inter-block), Youden squares, lattice designs, PBIB designs",
+            "Confounded factorial experiments: total, partial, simultaneous confounding; fractional replicates; asymmetric factorial designs",
+            "Split-plot, split-split-plot, strip-plot, nested designs; analysis of covariance (ANCOVA) with one or more ancillary variables"
+          ],
+          "main_texts": [
+            "Montgomery, D. C. (2020). Design and Analysis of Experiments (10th ed.). Wiley.",
+            "Lawson, J. (2015). Design and Analysis of Experiments with R. Chapman and Hall/CRC."
+          ]
+        },
+        {
+          "code": "STA 4156",
+          "title": "Design & Analysis of Experiments – II Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Practical analysis of confounded factorial experiments (total, partial, simultaneous) and fractionally replicated designs",
+            "Intra- and inter-block analysis of BIBD; analysis of split-plot, split-split-plot, strip-plot, and nested designs",
+            "Fitting and interpreting ANCOVA models using statistical software"
+          ],
+          "main_texts": [
+            "Montgomery, D. C. (2020). Design and Analysis of Experiments (10th ed.). Wiley.",
+            "Lawson, J. (2015). Design and Analysis of Experiments with R. Chapman and Hall/CRC."
+          ]
+        },
+        {
+          "code": "STA 4157",
+          "title": "Sampling Techniques – II",
+          "credits": 3.0,
+          "content_summary": [
+            "Sampling with unequal probability: Horvitz-Thompson estimator; Brewer, Durbin, Raj, Murthy, Rao-Hartley-Cochran methods; PPS systematic sampling",
+            "Multi-stage sampling: two and three stage with equal/unequal clusters; self-weighting estimates",
+            "Double sampling for stratification, ratio, regression, and difference estimation; sampling on two or more occasions",
+            "Non-sampling errors: interviewer bias, non-response, interpenetrating subsamples; familiarity with Bangladesh large-scale surveys (DHS, HIES, SVRS)"
+          ],
+          "main_texts": [
+            "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley.",
+            "Lohr, S. L. (2010). Sampling: Design and Analysis (2nd ed.). MPS Limited."
+          ]
+        },
+        {
+          "code": "STA 4158",
+          "title": "Sampling Techniques – II Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Practical implementation of PPS sampling, two-stage sampling (equal and unequal clusters), and double sampling",
+            "Computation of population totals, means, and standard errors under complex sampling designs",
+            "Self-weighting estimates and interpretation of results"
+          ],
+          "main_texts": [
+            "Cochran, W. G. (1977). Sampling Techniques (3rd ed.). John Wiley.",
+            "Lohr, S. L. (2010). Sampling: Design and Analysis (2nd ed.). MPS Limited."
+          ]
+        },
+        {
+          "code": "STA 4150",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    },
+    {
+      "name": "Fourth Year Second Semester",
+      "total_credits": 19.0,
+      "optional": 4.0,
+      "courses": [
+        {
+          "code": "STA 4251",
+          "title": "Multivariate Analysis",
+          "credits": 3.0,
+          "content_summary": [
+            "Non-central chi-square, t, and F distributions; distribution of quadratic forms and Cochran's theorem",
+            "Multivariate normal distribution: derivation, marginal/conditional distributions, MGF, characteristic function, and properties",
+            "Multivariate sampling distributions: Hotelling's T², Mahalanobis D², Wishart distribution; tests for covariance/correlation patterns",
+            "Multivariate linear models: multivariate regression, MANOVA, MANCOVA, conditional Gaussian and independence graphs"
+          ],
+          "main_texts": [
+            "Johnson, R. A., & Wichern, D. W. (2015). Applied Multivariate Statistical Analysis (6th ed.). Pearson Prentice Hall.",
+            "Rencher, A. C., & Christensen, W. F. (2012). Methods of Multivariate Analysis (3rd ed.). John Wiley & Sons."
+          ]
+        },
+        {
+          "code": "STA 4252",
+          "title": "Multivariate Analysis Lab",
+          "credits": 1.5,
+          "content_summary": [
+            "Simulation of multivariate normal variates using software",
+            "Tests of mean vectors using Hotelling's T² and Mahalanobis D²; tests for covariance and correlation patterns",
+            "Estimation of multivariate linear regression and construction of MANOVA tables"
+          ],
+          "main_texts": [
+            "Johnson, R. A., & Wichern, D. W. (2015). Applied Multivariate Statistical Analysis (6th ed.). Pearson Prentice Hall."
+          ]
+        },
+        {
+          "code": "STA 4253",
+          "title": "Biostatistics & Epidemiology",
+          "credits": 3.0,
+          "content_summary": [
+            "Survival analysis: censoring types, survival/hazard functions, mean residual life; non-parametric methods (Kaplan-Meier, Nelson-Aalen, life table, log-rank, Wilcoxon)",
+            "Parametric methods for exponential and Weibull distributions; Cox proportional hazard model (basic concept)",
+            "Epidemiology: study designs (case-control, cohort, prospective, retrospective); measures of association (RR, OR, AR, incidence, prevalence, sensitivity, specificity, ROC curve)",
+            "Logistic and Poisson regression models, McNemar test, correlated proportions, basic linear mixed models"
+          ],
+          "main_texts": [
+            "Kleinbaum, D. G., Kupper, L. L., & Morgenstern, H. (1982). Epidemiologic Research: Principles and Quantitative Methods. John Wiley & Sons.",
+            "Rothman, K. J. (2012). Epidemiology: An Introduction (2nd ed.). Oxford University Press.",
+            "Klein, J. P., & Moeschberger, M. L. (2003). Survival Analysis: Techniques for Censored and Truncated Data (2nd ed.). Springer."
+          ]
+        },
+        {
+          "code": "STA 4254",
+          "title": "Biostatistics & Epidemiology Lab",
+          "credits": 3.0,
+          "content_summary": [
+            "Estimation of survival probabilities using non-parametric methods (complete and censored data)",
+            "Fitting parametric survival models (exponential, Weibull); hypothesis testing with complete and censored samples",
+            "Computing epidemiological measures (incidence, prevalence, RR, OR, AR); applying logistic regression, McNemar test, and linear mixed models using software"
+          ],
+          "main_texts": [
+            "Klein, J. P., & Moeschberger, M. L. (1997). Survival Analysis: Techniques for Censored and Truncated Data. Springer.",
+            "Lawless, J. F. (2002). Statistical Models and Methods for Lifetime Data (2nd ed.). John Wiley & Sons.",
+            "Rothman, K. J. (2012). Epidemiology: An Introduction (2nd ed.). Oxford University Press."
+          ]
+        },
+        {
+          "code": "STA 4255",
+          "title": "Generalized Linear Models",
+          "credits": 3.5,
+          "content_summary": [
+            "Exponential family of distributions (Bernoulli, Binomial, Poisson, Gamma, Normal) and their properties",
+            "GLM components: random, systematic, link functions; Poisson regression; MLE via iteratively reweighted least squares (IRLS)",
+            "Inference: deviance, scaled deviance, Pearson chi-square, residuals (Pearson, Anscombe); logit link, nominal and ordinal logistic regression; goodness-of-fit (Hosmer-Lemeshow, AIC, BIC)",
+            "Quasi-likelihood methods; GEE for repeated measures; linear and generalized linear mixed effects models"
+          ],
+          "main_texts": [
+            "Dobson, A. J., & Barnett, A. G. (2008). An Introduction to Generalized Linear Models (3rd ed.). Chapman and Hall/CRC."
+          ]
+        },
+        {
+          "code": "STA 4257",
+          "title": "Research Methodology",
+          "credits": 2.0,
+          "content_summary": [
+            "Research concepts: types of research, inductive/deductive approaches, ethical issues, research question formulation",
+            "Research designs: exploratory, descriptive (cross-sectional, longitudinal, panel), and causal/experimental studies",
+            "Sampling design, questionnaire construction, data collection methods (interview, FGD, IDI, KII), data processing and analysis",
+            "Research proposal writing, report structure, referencing, and reliability/validity of measurements"
+          ],
+          "main_texts": [
+            "Kothari, C. R. (2013). Research Methodology: Methods and Techniques (3rd ed.). New Age International.",
+            "Akand, M. A. S. (2019). Research Methodology: A Complete Direction for Learners (2nd ed.). Akanda & Sons."
+          ]
+        },
+        {
+          "code": "STA 4261",
+          "title": "Introduction to Data Science",
+          "credits": 2.0,
+          "content_summary": [
+            "Data science concepts: objectives, process, tools, methodology, ethics, bias, and privacy",
+            "Data preprocessing: cleaning, encoding, missing value handling, normalization, feature engineering, exploratory data analysis",
+            "Machine learning concepts: supervised (regression, classification: KNN, decision tree, SVM, random forest, naive Bayes, ANN) and unsupervised (clustering, association rules) learning",
+            "Big data: characteristics, types, analytics techniques, platforms, and tools; hands-on project with R, Python, and SQL"
+          ],
+          "main_texts": [
+            "Kalita, J. K., Bhattacharyya, D. K., & Roy, S. (2023). Fundamentals of Data Science: Theory and Practice. Elsevier.",
+            "Ou, G., Zhu, Z., Dong, B., & Weinan, E. (2023). Introduction to Data Science. World Scientific."
+          ]
+        },
+        {
+          "code": "STA 4258",
+          "title": "Research Project",
+          "credits": 2.0,
+          "content_summary": [
+            "30-day independent research project: students select a topic with a supervisor, design the study, collect and analyze data",
+            "Written report submitted using LaTeX; evaluated by assigned teacher, external examiner, and oral presentation to examination committee"
+          ],
+          "main_texts": []
+        },
+        {
+          "code": "STA 4259",
+          "title": "30 Days Comprehensive (Optional)",
+          "credits": 4.0,
+          "content_summary": [
+            "Comprehensive review course covering foundational and advanced topics across the entire program",
+            "Major topic areas: descriptive statistics, probability and distributions, sampling distributions, point and interval estimation, hypothesis testing (parametric and non-parametric), sampling techniques (SRS, stratified, systematic, cluster), and experimental designs (CRD, RBD, Latin Square)"
+          ],
+          "main_texts": [
+            "Gupta, S. C., & Kapoor, V. K. (2000). Fundamentals of Mathematical Statistics (10th ed.). Sultan Chand and Sons.",
+            "Ross, S. M. (2010). Introductory Statistics (3rd ed.). Academic Press.",
+            "Ross, S. M. (2018). A First Course in Probability (9th ed.). Academic Press."
+          ]
+        },
+        {
+          "code": "STA 4250",
+          "title": "Presentation & Viva Voce",
+          "credits": 1.0,
+          "content_summary": [
+            "Oral examination and presentation covering core course concepts of the semester",
+            "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
+          ],
+          "main_texts": []
+        }
+      ]
+    }
+  ]
+}
