@@ -28,7 +28,7 @@ export default function CalculatorPage() {
         </div>
       </main>
 
-      <footer className="border-t border-border/60 py-6 text-center text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+      <footer className="border-t border-border/60 bg-background/80 py-6 text-center text-[11px] uppercase tracking-[0.15em] text-muted-foreground backdrop-blur-md">
         IRIS 34 · SUST Statistics 2024
       </footer>
     </>

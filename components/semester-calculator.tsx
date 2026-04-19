@@ -88,7 +88,7 @@ export function SemesterCalculator() {
     <section className="rounded-lg border border-border bg-[color-mix(in_oklab,var(--card)_55%,transparent)] backdrop-blur-sm">
       <header className="flex flex-col gap-3 border-b border-border/70 p-5 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="font-serif text-base italic tracking-[0.2em] text-muted-foreground sm:text-lg">
             Semester GPA
           </p>
           <h2 className="mt-1 font-serif text-xl tracking-tight">

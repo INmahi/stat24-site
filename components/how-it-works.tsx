@@ -20,11 +20,11 @@ export function HowItWorks() {
             type="button"
             aria-label="How to use this page"
             title="How to use this page"
-            className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-md border border-amber-500/60 bg-amber-500/15 px-2.5 text-xs font-semibold uppercase tracking-wider text-amber-400 shadow-sm transition-colors hover:bg-amber-500/25 hover:text-amber-300"
+            className="inline-flex h-5 shrink-0 translate-y-0.5 items-center gap-1 rounded border border-amber-500/60 bg-amber-500/15 px-1.5 text-[10px] font-semibold uppercase tracking-wider text-amber-400 transition-colors hover:bg-amber-500/25 hover:text-amber-300"
           />
         }
       >
-        <AlertTriangle className="h-4 w-4 fill-amber-500/20" />
+        <AlertTriangle className="h-3 w-3" />
         How to use
       </DialogTrigger>
 

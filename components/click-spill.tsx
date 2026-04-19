@@ -3,6 +3,9 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
+// Flip to `true` to re-enable the click-spill effect site-wide.
+const ENABLED = false;
+
 const SYMBOLS = [
   "Σ",
   "μ",
@@ -43,6 +46,11 @@ type Drop = {
  * fade out. Zero-impact when idle; hardware accelerated via `motion`.
  */
 export function ClickSpill() {
+  if (!ENABLED) return null;
+  return <ClickSpillInner />;
+}
+
+function ClickSpillInner() {
   const [drops, setDrops] = useState<Drop[]>([]);
 
   const spawn = useCallback((x: number, y: number) => {
