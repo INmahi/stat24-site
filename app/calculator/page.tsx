@@ -1,5 +1,6 @@
 import { CgpaOverview } from "@/components/cgpa-overview";
 import { SemesterCalculator } from "@/components/semester-calculator";
+import { HowItWorks } from "@/components/how-it-works";
 
 export default function CalculatorPage() {
   return (
@@ -13,10 +14,13 @@ export default function CalculatorPage() {
             <h1 className="mt-2 font-serif text-3xl tracking-tight sm:text-4xl">
               Calculator
             </h1>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Compute a semester GPA with flexible grade entry. Track cumulative
-              GPA across all eight semesters.
-            </p>
+            <div className="mt-2 flex items-start gap-2">
+              <p className="max-w-2xl text-sm text-muted-foreground">
+                Compute a semester GPA with flexible grade entry. Track
+                cumulative GPA across all eight semesters.
+              </p>
+              <HowItWorks />
+            </div>
           </div>
 
           <CgpaOverview />

@@ -92,7 +92,7 @@ export function SemesterCalculator() {
             Semester GPA
           </p>
           <h2 className="mt-1 font-serif text-xl tracking-tight">
-            Per-course entry
+            Semester-wise Results
           </h2>
         </div>
         <Select value={semesterIndex} onValueChange={handleSelect}>
