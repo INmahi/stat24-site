@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SUST Stat 34 — GPA/CGPA Calculator
 
-## Getting Started
+Next.js 16 app with:
 
-First, run the development server:
+- Per-semester GPA calculator (marks / GPA / letter inputs stay in sync)
+- Cumulative GPA across semesters (persisted in `localStorage`)
+- Course detail modal (content summary + main texts)
+- Chat advisor grounded in the full curriculum (Groq Llama 3.3 70B, streaming)
+
+## Local setup
 
 ```bash
+cp .env.example .env.local
+# paste your free Groq API key from https://console.groq.com/keys
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Name | Required | Notes |
+|---|---|---|
+| `GROQ_API_KEY` | yes | Get one free at https://console.groq.com/keys — no credit card. Server-side only; never exposed to the browser. |
 
-## Learn More
+## Deploying to Netlify
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this repo to GitHub.
+2. On Netlify: **Add new site → Import from Git**, pick the repo, point base directory at `web/` if you keep the monorepo layout.
+3. In **Site settings → Environment variables**, add `GROQ_API_KEY`.
+4. Deploy. Netlify auto-detects Next.js (no manual plugin install required).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+  api/chat/route.ts    streaming chat endpoint (Groq)
+  page.tsx             home page (server component)
+  layout.tsx           root layout, dark theme
+components/
+  semester-calculator.tsx
+  course-row.tsx
+  course-detail-dialog.tsx
+  cgpa-overview.tsx
+  chat-panel.tsx
+  ui/                  shadcn components
+lib/
+  curriculum.ts        typed wrapper around data/contents.json
+  grades.ts            SUST percentage → GPA, letter mappings, computeSemesterGpa, computeCgpa
+  storage.ts           useCgpaStore localStorage hook
+  chat-context.ts      serialises the user's saved GPAs as chat context
+  types.ts
+data/
+  contents.json        full curriculum (source of truth)
+```
 
-## Deploy on Vercel
+## Swapping the LLM
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The chat route uses Groq via `@ai-sdk/groq`. To try another provider (Gemini, OpenAI, etc.), install the corresponding `@ai-sdk/*` package and swap the `model` line in [app/api/chat/route.ts](app/api/chat/route.ts). The rest is provider-agnostic thanks to the AI SDK.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Updating the curriculum
+
+Edit [data/contents.json](data/contents.json). [lib/types.ts](lib/types.ts) defines the expected shape. Both the calculator and the chat context rebuild from this one file.

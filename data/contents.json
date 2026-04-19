@@ -11,6 +11,8 @@
           "code": "STA 1151",
           "title": "Principles of Statistics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Introduces descriptive statistics: data classification, tabulation, frequency distributions, and graphical presentation (histograms, bar charts, ogives)",
             "Covers measures of central tendency (mean, median, mode, quantiles) and dispersion (range, standard deviation, coefficient of variation)",
@@ -25,6 +27,8 @@
           "code": "STA 1152",
           "title": "Principles of Statistics Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Hands-on computation of descriptive statistics: central tendency, dispersion, skewness, kurtosis using manual calculation",
             "Practical exercises on data tabulation, frequency distribution construction, and graphical representation",
@@ -38,6 +42,8 @@
           "code": "MAT 1103",
           "title": "Basic Algebra",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Covers set theory, real number system, and complex numbers including De Moivre's theorem",
             "Summation of trigonometric series and methods such as C+iS",
@@ -51,6 +57,8 @@
           "code": "MAT 1104",
           "title": "Calculus",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Differential calculus: limits, continuity, higher derivatives, Leibnitz's theorem, Rolle's and Mean Value theorems, Taylor and Maclaurin series",
             "Maxima/minima of single and multivariable functions, partial and total derivatives",
@@ -64,6 +72,8 @@
           "code": "ENG 1105",
           "title": "English Language",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Develops reading skills: strategies like critical reading, annotation, summary writing, and contextual vocabulary",
             "Develops writing skills: grammar rules, tense, sentence construction, paragraph development, and use of connectors"
@@ -76,6 +86,8 @@
           "code": "STA 1150",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -92,6 +104,8 @@
           "code": "STA 1251",
           "title": "Introduction to Probability",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Covers set theory basics, sample spaces, events, classical and axiomatic probability, conditional probability, and independence",
             "Covers addition and multiplication laws, total probability theorem, Bayes' theorem",
@@ -107,6 +121,8 @@
           "code": "STA 1253",
           "title": "Sampling Techniques – I",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Introduces sampling concepts: probability vs non-probability sampling, census vs survey, sampling and non-sampling errors",
             "Covers Simple Random Sampling (SRS), Stratified, Systematic, and Cluster sampling with estimation of population mean, total, proportion and their standard errors",
@@ -122,6 +138,8 @@
           "code": "STA 1254",
           "title": "Sampling Techniques – I Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical drawing of samples using random numbers with and without replacement",
             "Manual computation of unbiased estimators of population mean, total, proportion, and confidence intervals under SRS, stratified, systematic, and cluster sampling",
@@ -136,6 +154,8 @@
           "code": "STA 1256",
           "title": "Introduction to Computer and SPSS Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Basic computer operations, MS Word, Excel (statistical analysis, charts), and PowerPoint",
             "SPSS: data entry, cleaning, management, graphical representation",
@@ -150,6 +170,8 @@
           "code": "SPS 1205",
           "title": "Introduction to Financial Mathematics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Interest rate measurement: simple, compound, nominal, effective rates, force of interest, present and future values",
             "Valuation of annuities (immediate, due, perpetuity), loan repayment and amortization, bond valuation and yield rates",
@@ -164,6 +186,8 @@
           "code": "MAT 1207",
           "title": "Linear Algebra",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Matrix operations, types of matrices, inverse, adjoint, Cramer's rule, row echelon forms, and rank",
             "Systems of linear equations (homogeneous and non-homogeneous), g-inverse, quadratic forms",
@@ -179,6 +203,8 @@
           "code": "ENG 1209",
           "title": "Academic Writing",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Covers academic writing style: formality, objectivity, coherence, hedging, and paragraph structure",
             "Essay types (argumentative, persuasive, expository), essay development, and formal letter writing",
@@ -193,6 +219,8 @@
           "code": "STA 1250",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -209,6 +237,8 @@
           "code": "STA 2151",
           "title": "Probability Distributions",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Review of probability functions, MGF, CGF, characteristic and probability generating functions",
             "Detailed study of discrete distributions: Bernoulli, Binomial, Poisson, Geometric, Hypergeometric, Negative Binomial, Multinomial; brief coverage of Logarithmic, Beta Binomial, Power Series",
@@ -225,6 +255,8 @@
           "code": "STA 2153",
           "title": "Theory of Statistics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Sampling distributions from normal and non-normal populations; central limit theorem",
             "Detailed study of chi-square, Student's t, and F distributions; distribution of correlation and regression coefficients",
@@ -240,6 +272,8 @@
           "code": "STA 2154",
           "title": "Theory of Statistics Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical hypothesis testing for one-sample and two-sample cases: mean, variance, proportion, correlation",
             "Bartlett's homogeneity test, chi-square tests for 2x2 and r×c contingency tables",
@@ -254,6 +288,8 @@
           "code": "STA 2156",
           "title": "Statistical Computing: C++ & STATA Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "C++ basics: variables, data types, control structures, functions, arrays, pointers, dynamic memory, classes, inheritance, and polymorphism",
             "STATA: data entry, cleaning, management, graphical representation of data",
@@ -269,6 +305,8 @@
           "code": "MAT 2105",
           "title": "Advanced Calculus & Differential Equations",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Improper integrals, Gamma and Beta functions, multivariable functions, Taylor expansion, maxima/minima with Lagrange multipliers",
             "Multiple integrals, Jacobians, Dirichlet integrals, Laplace and inverse Laplace transforms, Fourier series",
@@ -282,6 +320,8 @@
           "code": "ECO 2107",
           "title": "Principles of Microeconomics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Basic economic concepts: scarcity, opportunity cost, PPF, demand and supply laws, elasticity, market equilibrium",
             "Consumer behavior: utility theory, indifference curves, budget constraints, income and substitution effects",
@@ -297,6 +337,8 @@
           "code": "STA 2150",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -313,6 +355,8 @@
           "code": "STA 2251",
           "title": "Regression Analysis – I",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Correlation analysis: Pearson, rank, biserial, polychoric, intra-class correlations; spurious and non-sense correlation",
             "Simple linear regression: OLS estimation, Gauss-Markov theorem, hypothesis testing, error variance estimation",
@@ -329,6 +373,8 @@
           "code": "STA 2252",
           "title": "Regression Analysis – I Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Software-based computation of correlation coefficients (Pearson, rank, biserial, polychoric, intra-class)",
             "Fitting simple and multiple linear regression models using OLS; testing parameters and checking model adequacy",
@@ -344,6 +390,8 @@
           "code": "MAT 2203",
           "title": "Numerical Methods",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Interpolation and extrapolation: Newton's forward/backward, Lagrange's, divided difference, and central difference (Stirling, Bessel) formulas",
             "Root finding methods: Bisection, Newton-Raphson, Iteration; inverse interpolation",
@@ -358,6 +406,8 @@
           "code": "MAT 2205",
           "title": "Real Analysis",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Real number system: completeness, supremum/infimum, countable and bounded sets",
             "Sequences: convergence, monotone sequences, Bolzano-Weierstrass theorem, Cauchy sequences",
@@ -373,6 +423,8 @@
           "code": "ECO 2207",
           "title": "Principles of Macroeconomics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Macroeconomic indicators: GDP, GNI, national income measurement methods, real vs nominal GDP, business cycles",
             "Aggregate demand and supply, Keynesian vs Classical views, equilibrium output and multiplier effects",
@@ -388,6 +440,8 @@
           "code": "CSE 2209",
           "title": "Database Management & Programming",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": false,
           "content_summary": [
             "Database concepts: DBMS, RDBMS, entity-relationship model, relational model, SQL basics",
             "Database design: indexing, sorting, integrity constraints, transactions, database security and concurrency",
@@ -402,6 +456,8 @@
           "code": "CSE 2211",
           "title": "Database Management & Programming Lab",
           "credits": 3.0,
+          "course_type": "Lab",
+          "isMajor": false,
           "content_summary": [
             "Practical: creating, modifying, indexing, and sorting databases using software",
             "Designing customer screens, reports, and menus; writing basic database programs",
@@ -416,6 +472,8 @@
           "code": "STA 2250",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -432,6 +490,8 @@
           "code": "STA 3151",
           "title": "Design & Analysis of Experiments – I",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "ANOVA: one-way, two-way, three-way classification with fixed, random, and mixed effect models; model adequacy checking",
             "Multiple comparison tests: Tukey, Newman-Keuls, Duncan, Dunnett, Bonferroni",
@@ -448,6 +508,8 @@
           "code": "STA 3152",
           "title": "Design & Analysis of Experiments – I Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical ANOVA for one-way and two-way classified data with fixed, random, and mixed models",
             "Analysis of CRD, RBD, and Latin Square designs; handling missing data",
@@ -462,6 +524,8 @@
           "code": "STA 3153",
           "title": "Statistical Inference",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Point estimation: unbiasedness, sufficiency, consistency, efficiency, Cramer-Rao lower bound, MVB; methods of MLE, moments, least squares, Bayes",
             "Interval estimation: confidence intervals for normal, binomial, Poisson parameters; large sample intervals",
@@ -478,6 +542,8 @@
           "code": "STA 3154",
           "title": "Statistical Inference Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Drawing samples from univariate and bivariate normal distributions; applying MLE and method of moments",
             "Constructing confidence intervals for normal, binomial, and Poisson parameters",
@@ -492,6 +558,8 @@
           "code": "STA 3155",
           "title": "Statistical Simulation & Data Analysis (R & Python)",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Simulation concepts: discrete and continuous simulation, random number and random variate generation",
             "Monte Carlo integration; functions including incomplete gamma/beta, chi-square, t, F, binomial, hypergeometric distributions",
@@ -507,6 +575,8 @@
           "code": "STA 3156",
           "title": "Statistical Simulation & Data Analysis Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical R and Python: basic operations, data management, data frames, grouping, and graphical representation",
             "Data analysis using R/Python: regression, ANOVA, all-possible regressions, model diagnostics, RBD analysis, split-plot, non-orthogonal designs"
@@ -521,6 +591,8 @@
           "code": "STA 3157",
           "title": "Linear Programming",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "LP formulation, graphical method, simplex method, revised simplex, primal-dual problems, sensitivity analysis",
             "Integer programming: cutting plane and branch-and-bound algorithms",
@@ -536,6 +608,8 @@
           "code": "STA 3150",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -552,6 +626,8 @@
           "code": "STA 3251",
           "title": "Stochastic Processes",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Modern probability: Borel fields, probability measure, conditional expectation in sigma-algebras",
             "Characteristic and probability generating functions; convergence of random variables, laws of large numbers, CLT, Martingales",
@@ -569,6 +645,8 @@
           "code": "STA 3253",
           "title": "Demography",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Sources of demographic data: census, surveys, vital registration; types of errors and detection methods",
             "Fertility measures: CBR, GFR, ASFR, TFR, GRR, NRR, Bongaarts' model; mortality measures: CDR, ASDR, infant mortality",
@@ -584,6 +662,8 @@
           "code": "STA 3254",
           "title": "Demography Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical computation of demographic rates and ratios (CBR, CDR, TFR, GRR, NRR, SR)",
             "Construction of population pyramids, complete and abridged life tables",
@@ -598,6 +678,8 @@
           "code": "STA 3256",
           "title": "Data Analysis with SAS Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "SAS fundamentals: program structure, syntax, accessing data sets and libraries",
             "Data management: reading, cleaning, merging/concatenating datasets, handling missing data, formatting",
@@ -611,6 +693,8 @@
           "code": "STA 3257",
           "title": "Regression Analysis – II",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Generalized and weighted least squares; Gauss-Markov-Aitken theorem; estimation and tests for linear restrictions",
             "Heteroscedasticity: detection, testing, and estimation under heteroscedastic disturbances",
@@ -627,6 +711,8 @@
           "code": "STA 3258",
           "title": "Regression Analysis – II Lab",
           "credits": 2.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Fitting multiple regression models and testing parameters using software",
             "Detection and correction of heteroscedasticity and multicollinearity; autocorrelation tests and remediation",
@@ -642,6 +728,8 @@
           "code": "STA 3259",
           "title": "Field Work",
           "credits": 1.0,
+          "course_type": "Capstone",
+          "isMajor": true,
           "content_summary": [
             "7-day field visit to an industry, organization, or institution for hands-on data collection experience",
             "Students apply sampling techniques, collaborate in groups, and submit a written field report"
@@ -652,6 +740,8 @@
           "code": "STA 3250",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -668,6 +758,8 @@
           "code": "STA 4151",
           "title": "Economic Statistics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Index numbers: price, quantity, value indices; cost of living index; tests of index numbers",
             "Time series: components, decomposition, trend and seasonality estimation methods",
@@ -683,6 +775,8 @@
           "code": "STA 4152",
           "title": "Economic Statistics Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Computation of price/income elasticity of demand; fitting demand and Engel curves",
             "Fitting Pareto and lognormal distributions; Lorenz curve and Gini ratio estimation",
@@ -697,6 +791,8 @@
           "code": "STA 4153",
           "title": "Applied Statistics",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Statistical quality control: control charts for variables (mean, range, SD) and attributes (p-chart, d-chart, c-chart), modified control limits",
             "Acceptance sampling: OC curves, ASN, ATI, AOQL; single, double, and sequential sampling plans (Dodge-Romig)",
@@ -712,6 +808,8 @@
           "code": "STA 4154",
           "title": "Applied Statistics Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Drawing control charts (mean, range, SD, p, d, c) and computing modified control limits using industrial data",
             "Constructing OC, ASN, ATI, AOQ curves for single, double, and sequential sampling plans",
@@ -726,6 +824,8 @@
           "code": "STA 4155",
           "title": "Design & Analysis of Experiments – II",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Linear estimation, estimable functions, optimality of least squares, tests of hypothesis for non-full-rank models",
             "Incomplete block designs: BIB design construction and analysis (intra- and inter-block), Youden squares, lattice designs, PBIB designs",
@@ -741,6 +841,8 @@
           "code": "STA 4156",
           "title": "Design & Analysis of Experiments – II Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical analysis of confounded factorial experiments (total, partial, simultaneous) and fractionally replicated designs",
             "Intra- and inter-block analysis of BIBD; analysis of split-plot, split-split-plot, strip-plot, and nested designs",
@@ -755,6 +857,8 @@
           "code": "STA 4157",
           "title": "Sampling Techniques – II",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Sampling with unequal probability: Horvitz-Thompson estimator; Brewer, Durbin, Raj, Murthy, Rao-Hartley-Cochran methods; PPS systematic sampling",
             "Multi-stage sampling: two and three stage with equal/unequal clusters; self-weighting estimates",
@@ -770,6 +874,8 @@
           "code": "STA 4158",
           "title": "Sampling Techniques – II Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Practical implementation of PPS sampling, two-stage sampling (equal and unequal clusters), and double sampling",
             "Computation of population totals, means, and standard errors under complex sampling designs",
@@ -784,6 +890,8 @@
           "code": "STA 4150",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
@@ -801,6 +909,8 @@
           "code": "STA 4251",
           "title": "Multivariate Analysis",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Non-central chi-square, t, and F distributions; distribution of quadratic forms and Cochran's theorem",
             "Multivariate normal distribution: derivation, marginal/conditional distributions, MGF, characteristic function, and properties",
@@ -816,6 +926,8 @@
           "code": "STA 4252",
           "title": "Multivariate Analysis Lab",
           "credits": 1.5,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Simulation of multivariate normal variates using software",
             "Tests of mean vectors using Hotelling's T² and Mahalanobis D²; tests for covariance and correlation patterns",
@@ -829,6 +941,8 @@
           "code": "STA 4253",
           "title": "Biostatistics & Epidemiology",
           "credits": 3.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Survival analysis: censoring types, survival/hazard functions, mean residual life; non-parametric methods (Kaplan-Meier, Nelson-Aalen, life table, log-rank, Wilcoxon)",
             "Parametric methods for exponential and Weibull distributions; Cox proportional hazard model (basic concept)",
@@ -845,6 +959,8 @@
           "code": "STA 4254",
           "title": "Biostatistics & Epidemiology Lab",
           "credits": 3.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Estimation of survival probabilities using non-parametric methods (complete and censored data)",
             "Fitting parametric survival models (exponential, Weibull); hypothesis testing with complete and censored samples",
@@ -860,6 +976,8 @@
           "code": "STA 4255",
           "title": "Generalized Linear Models",
           "credits": 3.5,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Exponential family of distributions (Bernoulli, Binomial, Poisson, Gamma, Normal) and their properties",
             "GLM components: random, systematic, link functions; Poisson regression; MLE via iteratively reweighted least squares (IRLS)",
@@ -874,6 +992,8 @@
           "code": "STA 4257",
           "title": "Research Methodology",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Research concepts: types of research, inductive/deductive approaches, ethical issues, research question formulation",
             "Research designs: exploratory, descriptive (cross-sectional, longitudinal, panel), and causal/experimental studies",
@@ -889,6 +1009,8 @@
           "code": "STA 4261",
           "title": "Introduction to Data Science",
           "credits": 2.0,
+          "course_type": "Theory",
+          "isMajor": true,
           "content_summary": [
             "Data science concepts: objectives, process, tools, methodology, ethics, bias, and privacy",
             "Data preprocessing: cleaning, encoding, missing value handling, normalization, feature engineering, exploratory data analysis",
@@ -904,6 +1026,8 @@
           "code": "STA 4258",
           "title": "Research Project",
           "credits": 2.0,
+          "course_type": "Capstone",
+          "isMajor": true,
           "content_summary": [
             "30-day independent research project: students select a topic with a supervisor, design the study, collect and analyze data",
             "Written report submitted using LaTeX; evaluated by assigned teacher, external examiner, and oral presentation to examination committee"
@@ -914,6 +1038,8 @@
           "code": "STA 4259",
           "title": "30 Days Comprehensive (Optional)",
           "credits": 4.0,
+          "course_type": "Optional",
+          "isMajor": true,
           "content_summary": [
             "Comprehensive review course covering foundational and advanced topics across the entire program",
             "Major topic areas: descriptive statistics, probability and distributions, sampling distributions, point and interval estimation, hypothesis testing (parametric and non-parametric), sampling techniques (SRS, stratified, systematic, cluster), and experimental designs (CRD, RBD, Latin Square)"
@@ -928,6 +1054,8 @@
           "code": "STA 4250",
           "title": "Presentation & Viva Voce",
           "credits": 1.0,
+          "course_type": "Lab",
+          "isMajor": true,
           "content_summary": [
             "Oral examination and presentation covering core course concepts of the semester",
             "Develops verbal communication, confidence, and ability to discuss statistical findings with expert audiences"
