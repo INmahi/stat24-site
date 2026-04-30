@@ -10,14 +10,21 @@ function buildCurriculumContext(): string {
     `Program: ${curriculum.program}`,
     `Total core credits: ${curriculum.total_core_credits}; optional: ${curriculum.optional_credits}`,
     "",
-    "Semesters and courses (code — title [credits]; bullets are course content):",
+    "Semesters and courses (code — title [credits]; '•' bullets list course content; '📖' lines list main texts/references):",
   ];
   for (const s of curriculum.semesters) {
     lines.push(`\n## ${s.name} — ${s.total_credits} credits`);
     for (const c of s.courses) {
-      lines.push(`- ${c.code} — ${c.title} [${c.credits} cr]`);
+      const tags: string[] = [];
+      if (c.course_type) tags.push(c.course_type);
+      if (c.isMajor) tags.push("Major");
+      const tagStr = tags.length ? ` (${tags.join(", ")})` : "";
+      lines.push(`- ${c.code} — ${c.title} [${c.credits} cr]${tagStr}`);
       for (const item of c.content_summary) {
         lines.push(`    • ${item}`);
+      }
+      for (const text of c.main_texts) {
+        lines.push(`    📖 ${text}`);
       }
     }
   }
