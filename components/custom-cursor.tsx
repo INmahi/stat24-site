@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * Crosshair cursor — chart-axis styling. Follows the pointer with a slight
- * lerp so motion feels intentional. Only active on fine-pointer devices
- * (mouse / trackpad); coarse pointers and touch see the native cursor.
+ * Crosshair cursor — chart-axis styling. Follows the pointer 1:1 with no
+ * smoothing. Only active on fine-pointer devices (mouse / trackpad); coarse
+ * pointers and touch see the native cursor.
  */
 export function CustomCursor() {
   const dotRef = useRef<HTMLDivElement>(null);
@@ -47,8 +47,8 @@ export function CustomCursor() {
     };
 
     const tick = () => {
-      currentX += (targetX - currentX) * 0.28;
-      currentY += (targetY - currentY) * 0.28;
+      currentX = targetX;
+      currentY = targetY;
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%) scale(${hovering ? 1.4 : 1})`;
       }
@@ -79,17 +79,33 @@ export function CustomCursor() {
       style={{ transform: "translate3d(-100px, -100px, 0)" }}
     >
       <svg
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
         className="text-foreground"
       >
-        <line x1="14" y1="2" x2="14" y2="10" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-        <line x1="14" y1="18" x2="14" y2="26" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-        <line x1="2" y1="14" x2="10" y2="14" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-        <line x1="18" y1="14" x2="26" y2="14" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-        <circle cx="14" cy="14" r="1.3" fill="currentColor" />
-        <circle cx="14" cy="14" r="6" fill="none" stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.4" />
+        {/* Outer sphere — soft, prominent halo */}
+        <circle
+          cx="16"
+          cy="16"
+          r="13"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1"
+          strokeOpacity="0.45"
+        />
+        {/* Inner ring — tighter accent */}
+        <circle
+          cx="16"
+          cy="16"
+          r="6.5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="0.7"
+          strokeOpacity="0.7"
+        />
+        {/* Center dot */}
+        <circle cx="16" cy="16" r="1.6" fill="currentColor" />
       </svg>
     </div>
   );

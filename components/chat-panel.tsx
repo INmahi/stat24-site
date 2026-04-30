@@ -106,6 +106,7 @@ export function ChatPanel() {
               className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm"
             />
             <motion.aside
+              data-no-row-collapse
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

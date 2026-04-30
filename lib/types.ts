@@ -4,6 +4,8 @@ export interface Course {
   credits: number;
   content_summary: string[];
   main_texts: string[];
+  course_type?: "Theory" | "Lab" | "Capstone" | "Optional";
+  isMajor?: boolean;
 }
 
 export interface Semester {

@@ -139,13 +139,15 @@
     @apply font-sans;
   }
 
-  /* Custom cursor — hides native cursor on fine pointers when the overlay is mounted. */
-  @media (pointer: fine) {
-    html.custom-cursor-active,
-    html.custom-cursor-active body,
-    html.custom-cursor-active * {
-      cursor: none !important;
-    }
+  /* Custom cursor — hide the native cursor whenever the overlay is mounted.
+     The CustomCursor component itself only attaches the class on fine
+     pointers, so this rule never fires on touch-only devices. */
+  html.custom-cursor-active,
+  html.custom-cursor-active body,
+  html.custom-cursor-active *,
+  html.custom-cursor-active *::before,
+  html.custom-cursor-active *::after {
+    cursor: none !important;
   }
 }
 

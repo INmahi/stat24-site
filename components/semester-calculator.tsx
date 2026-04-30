@@ -49,8 +49,9 @@ export function SemesterCalculator() {
     saveCourseGrades(semester.name, grades);
   }, [grades, semester, hydrated, saveCourseGrades]);
 
-  const { gpa, completedCredits } = useMemo(() => {
-    if (!semester) return { gpa: 0, completedCredits: 0 };
+  const { gpa, filledCredits, passedCredits } = useMemo(() => {
+    if (!semester)
+      return { gpa: 0, filledCredits: 0, passedCredits: 0 };
     return computeSemesterGpa(
       semester.courses.map((c) => ({
         credits: c.credits,
@@ -74,8 +75,8 @@ export function SemesterCalculator() {
   }
 
   function handleSave() {
-    if (!semester || completedCredits === 0) return;
-    save(semester.name, gpa, completedCredits);
+    if (!semester || filledCredits === 0) return;
+    save(semester.name, gpa, passedCredits);
   }
 
   function handleRemove() {
@@ -151,19 +152,19 @@ export function SemesterCalculator() {
               <Stat label="Total credits" value={totalCredits.toFixed(1)} />
               <Stat
                 label="Filled credits"
-                value={completedCredits.toFixed(1)}
+                value={filledCredits.toFixed(1)}
               />
               <Stat
                 label="Semester GPA"
-                value={completedCredits > 0 ? gpa.toFixed(2) : "—"}
+                value={passedCredits > 0 ? gpa.toFixed(2) : "—"}
                 highlight
-                ready={completedCredits > 0}
+                ready={passedCredits > 0}
               />
               <Stat
                 label="Progress"
                 value={
                   totalCredits > 0
-                    ? `${Math.round((completedCredits / totalCredits) * 100)}%`
+                    ? `${Math.round((filledCredits / totalCredits) * 100)}%`
                     : "0%"
                 }
               />
@@ -173,7 +174,7 @@ export function SemesterCalculator() {
             <div className="flex flex-wrap gap-2 border-t border-border/70 p-4">
               <Button
                 onClick={handleSave}
-                disabled={completedCredits === 0}
+                disabled={filledCredits === 0}
                 size="sm"
               >
                 <Save className="mr-1.5 h-3.5 w-3.5" />

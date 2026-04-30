@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 /**
  * Ambient particle network: drifting dots with lines between near neighbours.
@@ -12,6 +13,11 @@ import { useEffect, useRef } from "react";
  */
 export function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pathname = usePathname();
+  // Curriculum is a reading page — keep the field nearly still.
+  const speedScale = pathname === "/curriculum" ? 0.12 : 1;
+  const speedRef = useRef(speedScale);
+  speedRef.current = speedScale;
 
   useEffect(() => {
     const el = canvasRef.current;
@@ -65,9 +71,10 @@ export function ParticleBackground() {
       ctx.clearRect(0, 0, w, h);
 
       // Drift: particles move left→right, wrap around at the right edge.
+      const scale = speedRef.current;
       for (const p of particles) {
-        p.x += p.vx;
-        p.y += p.vy;
+        p.x += p.vx * scale;
+        p.y += p.vy * scale;
         if (p.x > w + 20) {
           p.x = -20;
           p.y = Math.random() * h;

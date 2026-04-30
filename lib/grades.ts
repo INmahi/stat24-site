@@ -49,20 +49,32 @@ export function gpaClass(gpa: number): GpaClass {
   return { label: "Don't give up", emoji: "💪", className: "text-red-400" };
 }
 
+/**
+ * SUST rule: a failed course (GPA = 0) does not count toward the GPA denominator.
+ * Numerator is sum(credits·gpa) over every graded course. Denominator is
+ * sum(credits) over only the courses with gpa > 0 (i.e., excluding fails).
+ *
+ * `filledCredits` reports everything the student has entered (used for UI
+ * "Filled credits" and progress), while `passedCredits` is the figure that
+ * actually weights the GPA — and that is what gets stored for CGPA.
+ */
 export function computeSemesterGpa(
   entries: Array<{ gpa?: number; credits: number }>,
-): { gpa: number; completedCredits: number } {
-  let totalCredits = 0;
+): { gpa: number; filledCredits: number; passedCredits: number } {
+  let filledCredits = 0;
+  let passedCredits = 0;
   let totalPoints = 0;
   for (const e of entries) {
     if (e.gpa !== undefined && !isNaN(e.gpa) && e.gpa >= 0) {
-      totalCredits += e.credits;
+      filledCredits += e.credits;
       totalPoints += e.gpa * e.credits;
+      if (e.gpa > 0) passedCredits += e.credits;
     }
   }
   return {
-    gpa: totalCredits > 0 ? totalPoints / totalCredits : 0,
-    completedCredits: totalCredits,
+    gpa: passedCredits > 0 ? totalPoints / passedCredits : 0,
+    filledCredits,
+    passedCredits,
   };
 }
 
