@@ -116,25 +116,25 @@ function Bucket({ icon: Icon, label, accent, count, credits, children }: BucketP
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center gap-2 p-2.5 text-left transition-colors hover:bg-muted/20 sm:gap-3 sm:p-4"
+        className="flex w-full items-center gap-1.5 p-2 text-left transition-colors hover:bg-muted/20 sm:gap-3 sm:p-4"
       >
         <ChevronRight
           className={cn(
-            "h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform sm:h-4 sm:w-4",
+            "h-3 w-3 shrink-0 text-muted-foreground transition-transform sm:h-4 sm:w-4",
             open && "rotate-90",
           )}
         />
         <Icon
-          className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4"
+          className="h-3 w-3 shrink-0 sm:h-4 sm:w-4"
           style={{ color: accent }}
         />
-        <h2 className="min-w-0 truncate font-serif text-sm tracking-tight sm:text-base">
+        <h2 className="min-w-0 flex-1 truncate font-serif text-[11px] tracking-tight sm:text-base">
           {label}{" "}
-          <span className="font-mono text-[10px] font-normal text-muted-foreground sm:text-xs">
+          <span className="font-mono text-[9px] font-normal text-muted-foreground sm:text-xs">
             ({count})
           </span>
         </h2>
-        <span className="ml-auto shrink-0 font-mono text-[11px] tabular-nums text-foreground/85 sm:text-xs">
+        <span className="ml-auto shrink-0 font-mono text-[10px] tabular-nums text-foreground/85 sm:text-xs">
           {credits.toFixed(1)} cr
         </span>
       </button>

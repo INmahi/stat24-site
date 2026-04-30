@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   title: "IRIS 34 — SUST Statistics",
   description:
     "Batch 34 of SUST Department of Statistics · curriculum, GPA calculator, and AI academic advisor.",
+  // Favicon is supplied by the App Router file convention at app/icon.png.
 };
 
 export default function RootLayout({

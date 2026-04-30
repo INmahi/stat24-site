@@ -77,7 +77,7 @@ export function DownloadCurriculum() {
               <FileText className="mt-0.5 h-4 w-4 shrink-0 text-[#3e99c2]" />
               <span className="flex-1">
                 <span className="block font-medium text-foreground">
-                  Download as PDF
+                  Download as PDF | Session 2024-2025
                 </span>
                 <span className="block text-[11px] text-muted-foreground">
                   Official department booklet

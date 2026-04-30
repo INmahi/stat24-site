@@ -14,7 +14,7 @@ export default function CurriculumPage() {
           {/* Header */}
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
-              Curriculum
+              Curriculum | Session 2024-2025
             </p>
             <h1 className="mt-1.5 font-serif text-2xl tracking-tight sm:mt-2 sm:text-4xl">
               {curriculum.program}
