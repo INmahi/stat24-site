@@ -139,6 +139,11 @@
     @apply font-sans;
   }
 
+  ::selection {
+    background-color: #d4b25a;
+    color: #08090d;
+  }
+
   /* Custom cursor — hide the native cursor whenever the overlay is mounted.
      The CustomCursor component itself only attaches the class on fine
      pointers, so this rule never fires on touch-only devices. */
@@ -149,6 +154,62 @@
   html.custom-cursor-active *::after {
     cursor: none !important;
   }
+}
+
+/* Confidence-interval scrollbar — thumb is a gold "point estimate" with edges
+   fading like CI bounds. WebKit gets the gradient; Firefox falls back to a flat
+   thin gold thumb. Outside @layer so it wins over Tailwind preflight. */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #d4b25a transparent;
+  scrollbar-gutter: stable;
+}
+html::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+html::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(212, 178, 90, 0) 0%,
+    rgba(212, 178, 90, 0.35) 18%,
+    #d4b25a 42%,
+    #d4b25a 58%,
+    rgba(212, 178, 90, 0.35) 82%,
+    rgba(212, 178, 90, 0) 100%
+  );
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: 999px;
+  min-height: 90px;
+  transition: border-width 0.15s ease;
+}
+html::-webkit-scrollbar-thumb:horizontal,
+*::-webkit-scrollbar-thumb:horizontal {
+  background-image: linear-gradient(
+    to right,
+    rgba(212, 178, 90, 0) 0%,
+    rgba(212, 178, 90, 0.35) 18%,
+    #d4b25a 42%,
+    #d4b25a 58%,
+    rgba(212, 178, 90, 0.35) 82%,
+    rgba(212, 178, 90, 0) 100%
+  );
+  min-width: 90px;
+}
+html::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  border-width: 3px;
+}
+html::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 /* Serif utility for wordmarks / hero numerals. */

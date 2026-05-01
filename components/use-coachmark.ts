@@ -64,7 +64,7 @@ export function useCoachmark<T extends HTMLElement = HTMLElement>(
   // Auto-dismiss after a while.
   useEffect(() => {
     if (!show) return;
-    const ms = options?.autoDismissMs ?? 9000;
+    const ms = options?.autoDismissMs ?? 2000;
     const t = window.setTimeout(() => dismiss(), ms);
     return () => window.clearTimeout(t);
   }, [show, dismiss, options?.autoDismissMs]);

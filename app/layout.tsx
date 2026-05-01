@@ -6,7 +6,6 @@ import { ParticleBackground } from "@/components/particle-background";
 import { CustomCursor } from "@/components/custom-cursor";
 import { ClickSpill } from "@/components/click-spill";
 import { ChatPanel } from "@/components/chat-panel";
-import { DevToolsGreet } from "@/components/dev-tools-greet";
 
 const titillium = Titillium_Web({
   variable: "--font-titillium",
@@ -43,7 +42,6 @@ export default function RootLayout({
         <ChatPanel />
         <ClickSpill />
         <CustomCursor />
-        <DevToolsGreet />
       </body>
     </html>
   );

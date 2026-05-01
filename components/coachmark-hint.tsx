@@ -47,7 +47,11 @@ export function CoachmarkHint({
             role="tooltip"
             initial={{ opacity: 0, y: 6, scale: 0.94 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -4, scale: 0.94 }}
+            exit={{
+              opacity: 0,
+              scale: 0.96,
+              transition: { duration: 0.7, ease: "easeOut" },
+            }}
             transition={{ type: "spring", stiffness: 320, damping: 22 }}
             className="pointer-events-auto absolute -top-3 left-3 z-20 flex -translate-y-full items-center gap-2 rounded-full border border-accent/50 bg-background/95 px-3 py-1.5 text-xs font-medium text-accent shadow-lg backdrop-blur"
           >
