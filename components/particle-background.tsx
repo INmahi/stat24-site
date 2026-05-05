@@ -14,8 +14,8 @@ import { usePathname } from "next/navigation";
 export function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pathname = usePathname();
-  // Curriculum is a reading page — keep the field nearly still.
-  const speedScale = pathname === "/curriculum" ? 0.12 : 1;
+  // Curriculum and calculator are quieter reading/working pages — keep the field nearly still.
+  const speedScale = pathname === "/curriculum" || pathname === "/calculator" ? 0.12 : 1;
   const speedRef = useRef(speedScale);
   speedRef.current = speedScale;
 
