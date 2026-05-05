@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
  */
 export function CustomCursor() {
   const dotRef = useRef<HTMLDivElement>(null);
+  const imgRef = useRef<HTMLImageElement>(null);
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
@@ -35,9 +36,15 @@ export function CustomCursor() {
       targetX = e.clientX;
       targetY = e.clientY;
       const el = e.target as Element | null;
-      hovering = !!el?.closest(
+      const nextHovering = !!el?.closest(
         "button, a, input, select, textarea, [role='button'], [role='tab'], [data-slot='trigger']",
       );
+      if (nextHovering !== hovering) {
+        hovering = nextHovering;
+        if (imgRef.current) {
+          imgRef.current.src = hovering ? "/hand-cursor.png" : "/cursor.png";
+        }
+      }
     };
     const onLeave = () => {
       if (dotRef.current) dotRef.current.style.opacity = "0";
@@ -50,7 +57,7 @@ export function CustomCursor() {
       currentX = targetX;
       currentY = targetY;
       if (dotRef.current) {
-        dotRef.current.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%) scale(${hovering ? 1.4 : 1})`;
+        dotRef.current.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%)`;
       }
       raf = requestAnimationFrame(tick);
     };
@@ -78,35 +85,14 @@ export function CustomCursor() {
       className="pointer-events-none fixed left-0 top-0 z-[9999] transition-[scale] duration-150 will-change-transform"
       style={{ transform: "translate3d(-100px, -100px, 0)" }}
     >
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 32 32"
-        className="text-foreground"
-      >
-        {/* Outer sphere — soft, prominent halo */}
-        <circle
-          cx="16"
-          cy="16"
-          r="13"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-          strokeOpacity="0.45"
-        />
-        {/* Inner ring — tighter accent */}
-        <circle
-          cx="16"
-          cy="16"
-          r="6.5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="0.7"
-          strokeOpacity="0.7"
-        />
-        {/* Center dot */}
-        <circle cx="16" cy="16" r="1.6" fill="currentColor" />
-      </svg>
+      <img
+        ref={imgRef}
+        src="/cursor.png"
+        alt=""
+        width="28"
+        height="28"
+        style={{ opacity: 0.75 }}
+      />
     </div>
   );
 }

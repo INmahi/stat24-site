@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { Save, Trash2 } from "lucide-react";
+import { RotateCcw, Save, Trash2 } from "lucide-react";
 
 import { curriculum } from "@/lib/curriculum";
 import { computeSemesterGpa } from "@/lib/grades";
@@ -85,6 +85,11 @@ export function SemesterCalculator() {
     setGrades({});
   }
 
+  function handleResetSemesterInputs() {
+    if (!semester) return;
+    setGrades({});
+  }
+
   return (
     <section className="rounded-lg border border-border bg-[color-mix(in_oklab,var(--card)_55%,transparent)] backdrop-blur-sm">
       <header className="flex flex-col gap-3 border-b border-border/70 p-5 sm:flex-row sm:items-center sm:justify-between">
@@ -96,29 +101,43 @@ export function SemesterCalculator() {
             Semester-wise Results
           </h2>
         </div>
-        <Select value={semesterIndex} onValueChange={handleSelect}>
-          <SelectTrigger className="h-9 w-full sm:w-72">
-            {semesterIndex === "" ? (
-              <span className="text-muted-foreground">
-                Choose a semester…
-              </span>
-            ) : (
-              <span>{labelFor(parseInt(semesterIndex))}</span>
-            )}
-          </SelectTrigger>
-          <SelectContent>
-            {curriculum.semesters.map((s, i) => (
-              <SelectItem key={s.name} value={String(i)}>
-                <span>{labelFor(i)}</span>
-                {history[s.name] && (
-                  <span className="ml-auto text-xs text-muted-foreground tabular-nums">
-                    {history[s.name].gpa.toFixed(2)}
-                  </span>
-                )}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <div className="flex w-full gap-2 sm:w-auto">
+          <Select value={semesterIndex} onValueChange={handleSelect}>
+            <SelectTrigger className="h-9 w-full sm:w-72">
+              {semesterIndex === "" ? (
+                <span className="text-muted-foreground">
+                  Choose a semester…
+                </span>
+              ) : (
+                <span>{labelFor(parseInt(semesterIndex))}</span>
+              )}
+            </SelectTrigger>
+            <SelectContent>
+              {curriculum.semesters.map((s, i) => (
+                <SelectItem key={s.name} value={String(i)}>
+                  <span>{labelFor(i)}</span>
+                  {history[s.name] && (
+                    <span className="ml-auto text-xs text-muted-foreground tabular-nums">
+                      {history[s.name].gpa.toFixed(2)}
+                    </span>
+                  )}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={handleResetSemesterInputs}
+            disabled={!semester}
+            className="group border-border/50 bg-muted/60 text-muted-foreground hover:bg-destructive/15 hover:text-foreground hover:border-destructive/40"
+            title={semester ? "Clear all course inputs for this semester" : "Select a semester first"}
+          >
+            <RotateCcw className="mr-1.5 h-3.5 w-3.5 transition-transform duration-500 group-hover:-rotate-180" />
+            Reset
+          </Button>
+        </div>
       </header>
 
       <AnimatePresence mode="wait">
